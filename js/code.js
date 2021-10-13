@@ -1,11 +1,12 @@
 function ciclotriangulo() {
-
     let n = document.getElementById("num").value;
     var piramide = "";
+    var resultado = "";
     for (let i = 0; i < n; i++) {
         piramide += " #";
+        // document.write imprime en otra pantalla
         // document.write(piramide + "<br>");
-        document.getElementById("res").innerHTML = piramide + "<br>";
+        resultado += "<p>" + piramide + "</p>";
     }
-    alert(piramide);
+    document.getElementById("res").innerHTML = resultado;
 }
